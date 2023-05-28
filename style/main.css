@@ -38,6 +38,7 @@
 }
 
 #banner button {
+  background-color: white;
   border: none;
   font-weight: bold;
 }
@@ -157,6 +158,7 @@
 }
 
 #contact_us button {
+  background-color: white;
   border: none;
   font-weight: bold;
 }
