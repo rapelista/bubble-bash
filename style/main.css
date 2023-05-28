@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --var-color-bg-green: #2f6b4f;
+  --var-color-bg-gray: #f9f9f9;
+  --var-color-text-dark: #2a2c3d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+#header {
+  width: 100vw;
+  background-color: var(--var-color-bg-green);
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+#banner h1 {
+  font-size: 64px;
+}
+
+#banner p {
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+#banner button {
+  border: none;
+  font-weight: bold;
+}
+
+#stats {
+  color: var(--var-color-text-dark);
+}
+
+#stats p {
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+#service {
+  background-color: var(--var-color-bg-gray);
+}
+
+#service #label {
+  opacity: 0.7;
+}
+
+#service #card {
+  border: #2a2c3d solid 1px;
+}
+
+#service #services {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: space-between;
+  row-gap: 50px;
+}
+
+#service #services div {
+  width: 100%;
+  background-color: white;
+}
+
+#service #services .card-title {
+  font-size: 24px;
+}
+
+#service #services .card-body {
+  opacity: 0.7;
+}
+
+#portofolio #label {
+  opacity: 0.7;
+}
+
+#portofolio #portofolios {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: space-between;
+}
+
+#portofolio #portofolios .card-title {
+  font-size: 24px;
+}
+
+#portofolio #portofolios .card-body {
+  opacity: 0.7;
+}
+
+#review #label {
+  opacity: 0.7;
+}
+
+#review #reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 367px);
+  justify-content: space-between;
+}
+
+#review #reviews > div {
+  border: var(--var-color-text-dark) solid 2px;
+}
+
+#review #reviews .card-title {
+  font-size: 24px;
+}
+
+#review #reviews .card-body {
+  opacity: 0.7;
+}
+
+#review #reviews .profile {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 10px;
+}
+
+#review #reviews .profile img {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#review #reviews .profile .name {
+  font-weight: 600;
+}
+
+#review #reviews .profile .status {
+  opacity: 0.7;
+}
+
+#contact_us {
+  background-color: var(--var-color-bg-green);
+  color: white;
+}
+
+#contact_us h1 {
+  font-size: 48px;
+}
+
+#contact_us p {
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+#contact_us button {
+  border: none;
+  font-weight: bold;
+}
+
+#footer .grid {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  column-gap: 20px;
+}
+
+#footer .title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#footer .description {
+  opacity: 0.7;
+}
+
+#footer ul {
+  list-style-type: none;
+}
+
+#footer ul li {
+  margin-bottom: 10px;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer ul li a {
+  color: var(--var-color-text-dark);
+  opacity: 0.7;
+}
+
+#footer ul li:nth-child(1) {
+  font-weight: 600;
+}
