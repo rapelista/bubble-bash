@@ -13,7 +13,7 @@
 }
 
 #header {
-  width: 100vw;
+  min-width: 100vw;
   background-color: var(--var-color-bg-green);
   color: white;
   font-size: 20px;
@@ -29,11 +29,11 @@
 }
 
 #banner h1 {
-  font-size: 64px;
+  font-size: 2.1em;
 }
 
 #banner p {
-  font-size: 18px;
+  font-size: 1em;
   opacity: 0.7;
 }
 
@@ -48,7 +48,7 @@
 }
 
 #stats p {
-  font-size: 18px;
+  font-size: 1em;
   opacity: 0.7;
 }
 
@@ -66,9 +66,9 @@
 
 #service #services {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: 1fr;
   justify-content: space-between;
-  row-gap: 50px;
+  row-gap: 20px;
 }
 
 #service #services div {
@@ -90,8 +90,13 @@
 
 #portofolio #portofolios {
   display: grid;
-  grid-template-columns: repeat(3, 360px);
+  grid-template-columns: 1fr;
   justify-content: space-between;
+  row-gap: 20px;
+}
+
+#portofolio #portofolios img {
+  width: 100%;
 }
 
 #portofolio #portofolios .card-title {
@@ -108,8 +113,9 @@
 
 #review #reviews {
   display: grid;
-  grid-template-columns: repeat(3, 367px);
+  grid-template-columns: 1fr;
   justify-content: space-between;
+  row-gap: 20px;
 }
 
 #review #reviews > div {
@@ -149,11 +155,11 @@
 }
 
 #contact_us h1 {
-  font-size: 48px;
+  font-size: 2em;
 }
 
 #contact_us p {
-  font-size: 18px;
+  font-size: 1em;
   opacity: 0.7;
 }
 
@@ -165,8 +171,8 @@
 
 #footer .grid {
   display: grid;
-  grid-template-columns: 1fr auto auto auto;
-  column-gap: 20px;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
 }
 
 #footer .title {
@@ -179,11 +185,12 @@
 }
 
 #footer ul {
+  padding: 0;
   list-style-type: none;
 }
 
 #footer ul li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 #footer a {
@@ -197,4 +204,53 @@
 
 #footer ul li:nth-child(1) {
   font-weight: 600;
+}
+
+@media only screen and (min-width: 600px) {
+  #contact_us h1 {
+    font-size: 3em;
+  }
+
+  #service #services,
+  #portofolio #portofolios,
+  #review #reviews {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+
+  #footer .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+
+  #footer .grid div:nth-child(1) {
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #banner h1 {
+    font-size: 4em;
+  }
+
+  #service #services,
+  #portofolio #portofolios,
+  #review #reviews {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+  }
+
+  #footer .grid {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    column-gap: 20px;
+  }
+
+  #footer .grid div:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
